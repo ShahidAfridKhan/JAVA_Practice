@@ -1,4 +1,6 @@
-package Instant;
+package Instant.apps;
+
+import Instant.Partner;
 
 public class Swiggy implements Partner {
 

@@ -1,4 +1,7 @@
-package Instant;
+package Instant.apps;
+
+import Instant.Partner;
+import Instant.house.Restaurant;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,6 +14,8 @@ public class Main {
         S.order(10);
         S.trackOrder();
         S.cancelOrder();
+        Restaurant.showMenu();
+        Restaurant.prepareFood();
         System.out.println("---------------------------------------");
         Z.statment();
         Z.order(10);
