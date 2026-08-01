@@ -84,12 +84,21 @@ public class Code3 {
         long count=numbers.stream().count();
         System.out.println(count);
 
-
         numbers.stream()
                 .findFirst()
                 .get();
 
+        List<Integer> collect=numbers.stream()
+                .skip(2)
+                .collect(Collectors.toList());
 
+        System.out.println(collect);
+
+        List<Integer> limit=numbers.stream()
+                .limit(3)
+                .collect(Collectors.toList());
+
+        System.out.println(limit);
 
 
 
